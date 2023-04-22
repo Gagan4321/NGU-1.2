@@ -1,13 +1,18 @@
 body{
-    background-color: #cbbc66;
+    background-color: #6bd460;
+    position: ;
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #be1e1e;
+    background-color: #e10a0ac6;
     height: 80px;
+    max-width: 800%;
     padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px 15px greenyellow;
+
   }
   
   .logo-container {
@@ -20,6 +25,9 @@ header {
     margin-right: 10px;
     border-radius: 30px;
   }
+  .logo-container h1{
+    font-size: 20px;
+  }
   
   .search-container {
     display: flex;
@@ -31,12 +39,9 @@ header {
     align-items: center;
   }
   .navbar-ul{
-    font-size: 20px;
+    font-size: 14px;
   }
-  
-  
-  
-  
+
   nav ul {
     display: flex;
     align-items: center;
@@ -53,14 +58,32 @@ header {
     font-weight: bold;
   }
   
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
  /* this is the search bar content */
  .dropbtn {
-  background-color: #be1e1e;
+  background-color: #eae9e9;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: px;
+  font-size: px;
   border: none;
   cursor: pointer;
+  border-radius: 15px;
+
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -70,7 +93,7 @@ header {
 #myInput {
   box-sizing: border-box;
   background-image: url('searchicon.png');
-  background-position: 14px 12px;
+  background-position: 5px 5px;
   background-repeat: no-repeat;
   font-size: 16px;
   padding: 14px 20px 12px 45px;
@@ -105,9 +128,18 @@ header {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-
 .search-icon{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: auto;
 }
-/*  */
+
+/* the body of the content in navbar  */
+.content-select{
+  height: 200px;
+  width: 500px;
+  font-size: 25px;
+  text-align: center;
+  padding: auto;
+}
