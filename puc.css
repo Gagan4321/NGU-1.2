@@ -40,7 +40,9 @@ header .navbar1 ul li a{
     width: 25%;
     height: 3000px;
     font-size: 20px;
-    position: fixed;
+    top: 65px;
+    position:fixed;
+    overflow: scroll;
   }
   
   /* Style the buttons inside the tab */
@@ -83,6 +85,7 @@ header .navbar1 ul li a{
     font-size: 25px;
     /* font-family: 'Times New Roman', Times, serif ; */
     display: none;
+    border-right: 20px;
     /* position: fixed; */
   }
   .tabcontent span{
@@ -122,4 +125,9 @@ header .navbar1 ul li a{
     color: white;
 }
 
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
