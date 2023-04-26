@@ -7,35 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
     <title>EKS</title>
-</head>
-<body>
-    <header>
-       
-        <div class="logo-container">
-          <img src="EK.jpg" alt="Your Logo">
-          <h1 style="font-size:px; font-family: 'Courier New', Courier, monospace;">Educate Karnataka</h1>
-        </div> 
-        <div class="dropdown">
-        <img src="search-icon.png" alt="not found" class="search-icon" onclick="myFunction()" class="dropbtn"> 
-          <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-            <a href="new.html" target="_self">About</a>
-            <a href="#base">Base</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-            <a href="#custom">Custom</a>
-            <a href="#support">Support</a>
-            <a href="#tools">Tools</a>
-            <a href="#tools">Tools2</a>
-            <a href="#tools">Tools3</a>
-            <a href="#tools">Tools4</a>
-            <a href="#tools">Tools5</a>
-          </div>
-        </div>
-        
-        <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
+    <script>
+      <script>
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -57,6 +30,33 @@
         }
         </script>
 
+    </script>
+</head>
+<body>
+    <header class="header-continer">
+        <div class="logo-container">
+          <img src="EK.jpg" alt="Your Logo">
+          <h3 style=" font-family: 'Courier New', Courier, monospace;">Educate Karnataka</h>
+        </div> 
+        <div class="dropdown">
+        <img src="search-icon.png" alt="not found" class="search-icon" onclick="myFunction()" class="dropbtn"> 
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="new.html" target="_self">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+            <a href="#tools">Tools2</a>
+            <a href="#tools">Tools3</a>
+            <a href="#tools">Tools4</a>
+            <a href="#tools">Tools5</a>
+          </div>
+        </div>
+        
+        
 
         <!-- <div class="side-bar">
           <input type="checkbox" id="menu-bar">
@@ -82,7 +82,17 @@
 
           <input type="checkbox" name="" id="menu-bar">
           <!-- <label for="menu-bar">Menu</label> -->
-          <label for="menu-bar"><img src="three2.png" id="side-bar" alt=""></label>
+          <label for="menu-bar"><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script></label>
           <nav class="navbar">
               <ul>
                   <li><a href="#">Home</a></li>
@@ -96,20 +106,20 @@
           
       </header>
     <nav>
-      <div class="content-select">
-        <h3>WELCOME  TO EDUCATE KARNATAKA</h3>
-        <img src="student photo.jpeg" alt="" width="400px" height="200px ">
-      </div>
+     
       
     </nav>
     <section>
-          
+      <div class="content-select">
+        <h3>WELCOME  TO EDUCATE KARNATAKA</h3>
+        <img src="student photo.jpeg" alt="">
+      </div>
     </section>
     <aside>
 
     </aside>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+      <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
+    </footer>    
 </body>
 </html>
