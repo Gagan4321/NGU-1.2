@@ -180,64 +180,56 @@ display: none;
   transform: translate(0, -11px) rotate(45deg);
 }
 
-
-
-
-
-
-
-
-@media(max-width:991px){
-
-  header .navbar-ul{
-      display: none;
-    }
-
-  #side-bar{
-    display:initial;
-    width: 40px;
-  }
-
-  header #menu-bar{
-    display: none;
-  }
-
-  header label{
-    /* position: relative;
-    right: 10%; */
-    display: initial;
-  }
-  header .navbar{
-      margin: 3%;
-      position: absolute;
-      top: 15%; left: 0; right: 0;
-      background: #27b938;
-      border-top: 1px solid rgba(0,0,0,1);
-      display: none;
-      border-radius: 5px;
-  }
-  
-  header .navbar ul li{
-      width:55%;
-      
-      /* display: ; */
-  }
-
-  #menu-bar:checked ~ .navbar{
-      display: block;
-  }
-  nav .content-select{
-    padding-top: 7%;
-  }
-
+header .navbar-ul{
+  display: none;
 }
+
+#side-bar{
+display:initial;
+width: 40px;
+}
+
+header #menu-bar{
+display: none;
+}
+
+header label{
+/* position: relative;
+right: 10%; */
+display: initial;
+}
+header .navbar{
+  margin: 3%;
+  position: absolute;
+  top: 14%; left: 0; right: 0;
+  background: #27b938;
+  border-top: 1px solid rgba(0,0,0,1);
+  display: none;
+  border-radius: 5px;
+}
+
+header .navbar ul li{
+  width:55%;
+  
+  /* display: ; */
+}
+
+#menu-bar:checked ~ .navbar{
+  display: block;
+}
+nav .content-select{
+padding-top: 7%;
+}
+
 /* screen size reducing responsive */
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:991px) {
   /* For tablets: */
   .content-select{
     position: absolute;
-    top: 1000%;
+    top: 30%;
   }
+  .navbar-ul
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -277,6 +269,14 @@ display: none;
 
  }
  .content-select{
+ }
+ .footer p{
+  font-size: 10px;
+
+ }
+ header .navbar{
+  margin: 2%;
+  top: 17%;
  }
 }
 /* footer element in the that */
